@@ -1,0 +1,162 @@
+/*
+ * This file is part of Betaflight.
+ *
+ * Betaflight is free software. You can redistribute this software
+ * and/or modify this software under the terms of the GNU General
+ * Public License as published by the Free Software Foundation,
+ * either version 3 of the License, or (at your option) any later
+ * version.
+ *
+ * Betaflight is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ * See the GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public
+ * License along with this software.
+ *
+ * If not, see <http://www.gnu.org/licenses/>.
+ 
+ It's for testing purpose for new Open source FC
+ */
+
+#pragma once
+
+#define FC_TARGET_MCU     STM32G47X
+
+#define BOARD_NAME        OPENFC
+#define MANUFACTURER_ID   CUST
+
+
+ //IMU
+#define USE_ACC
+#define USE_ACC_SPI_ICM42688P
+#define USE_GYRO
+#define USE_GYRO_SPI_ICM42688P
+
+#define GYRO_1_EXTI_PIN                 PB2
+#define USE_GYRO_EXTI
+#define GYRO_1_CS_PIN                   PB12
+#define SPI2_SCK_PIN                    PB13
+#define SPI2_SDI_PIN                    PB14
+#define SPI2_SDO_PIN                    PB15
+
+#define GYRO_1_SPI_INSTANCE             SPI2
+
+#define GYRO_1_ALIGN                    CW90_DEG
+
+ //BARO
+#define USE_BARO
+#define USE_BARO_DPS310
+
+#define I2C4_SCL_PIN                    PC6
+#define I2C4_SDA_PIN                    PC7
+
+#define BARO_I2C_INSTANCE               I2CDEV_4
+#define DEFAULT_BARO_I2C_ADDRESS        119
+
+ //FLASH
+#define USE_FLASH
+#define USE_FLASH_W25Q128FV
+
+#define FLASH_CS_PIN                    PA15
+#define SPI3_SCK_PIN                    PB3
+#define SPI3_SDI_PIN                    PB4
+#define SPI3_SDO_PIN                    PB5
+
+#define FLASH_SPI_INSTANCE              SPI3
+
+#define DEFAULT_BLACKBOX_DEVICE         BLACKBOX_DEVICE_FLASH
+
+
+ //OSD
+#define USE_MAX7456
+
+#define MAX7456_SPI_CS_PIN   			PA4
+#define SPI1_SCK_PIN                    PA5
+#define SPI1_SDI_PIN                    PA6
+#define SPI1_SDO_PIN                    PA7
+
+#define MAX7456_SPI_INSTANCE SPI1
+
+ //USB
+#define USB_DETECT_PIN       PA10
+
+ //MOTOR & PWM
+#define MOTOR1_PIN           PA0
+#define MOTOR2_PIN           PA1
+#define MOTOR3_PIN           PA2
+#define MOTOR4_PIN           PA3
+
+
+#define USE_DSHOT
+#define DEFAULT_DSHOT_BITBANG DSHOT_BITBANG_ON
+
+ //LED STRIP 
+#define USE_LED_STRIP
+#define LED_STRIP_PIN        PC0
+
+ //Buzzer
+#define BEEPER_PIN           PC3  
+#define BEEPER_INVERTED
+
+ //DEBUG LED
+#define LED0_PIN             PB7
+#define LED1_PIN             PB6
+#define LED2_PIN             PB9
+
+ //ADC
+#define ADC_VBAT_PIN         PC1
+#define ADC_CURR_PIN         PC2
+
+#define DEFAULT_VOLTAGE_METER_SOURCE    VOLTAGE_METER_ADC
+#define DEFAULT_VOLTAGE_METER_SCALE     110
+
+#define ADC1_DMA_OPT        1
+
+ //ADDITIONAL RESOURCES
+#define UART1_TX_PIN         PC4
+#define UART1_RX_PIN         PC5
+
+#define UART3_TX_PIN         PB10
+#define UART3_RX_PIN         PB11
+
+#define UART4_TX_PIN         PC10
+#define UART4_RX_PIN         PC11
+
+#define UART5_TX_PIN         PC12
+#define UART5_RX_PIN         PD2
+
+#define I2C2_SCL_PIN         PA8
+#define I2C2_SDA_PIN         PA9
+
+#define I2C3_SCL_PIN         PC8
+#define I2C3_SDA_PIN         PC9
+
+ //GPS
+#define USE_GPS
+ 
+ //MAG
+#define USE_MAG
+#define MAG_I2C_INSTANCE I2CDEV_2
+ 
+ //Camera Control
+#define USE_CAMERA_CONTROL
+#define CAMERA_CONTROL_PIN PB0
+
+ 
+ //POSITION HOLD & ALTITUDE
+#define USE_POSITION_HOLD
+#define USE_ALTITUDE_HOLD
+ 
+ 
+ //TIMER MAP
+#define TIMER_PIN_MAPPING \
+	TIMER_PIN_MAP( 0, MOTOR1_PIN , 2,  1) \
+    TIMER_PIN_MAP( 1, MOTOR2_PIN , 2,  2) \
+    TIMER_PIN_MAP( 2, MOTOR3_PIN , 2,  3) \
+    TIMER_PIN_MAP( 3, MOTOR4_PIN , 2,  4) \
+    TIMER_PIN_MAP( 4, CAMERA_CONTROL_PIN , 3,  3) \
+	TIMER_PIN_MAP( 5, LED_STRIP_PIN , 1,  1) 
+
