@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "TPS62933DRLR")(type "KiCad")(uri "${KIPRJMOD}/custom_symbols&footprints/TPS62933DRLR/TPS62933DRLR.kicad_sym")(options "")(descr ""))
+  (lib (name "Connector_Generic1")(type "KiCad")(uri "${KIPRJMOD}/custom_symbols&footprints/conn/Connector_Generic.kicad_sym")(options "")(descr ""))
+)
