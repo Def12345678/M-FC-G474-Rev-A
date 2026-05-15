@@ -25,8 +25,8 @@
 
 #define FC_TARGET_MCU     STM32G47X
 
-#define BOARD_NAME        OPENFC
-#define MANUFACTURER_ID   CUST
+#define BOARD_NAME        M-FC
+#define MANUFACTURER_ID   Def
 
 
  //IMU
