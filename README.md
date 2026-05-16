@@ -90,7 +90,6 @@ Additional renders, routing views, and PCB previews are available in the [`img/`
 
 - **Betaflight version:** 4.6
 - **Target name:** `M-FC`
-- **Manufacturer ID:** `Def`
 - **MCU family:** `STM32G47X`
 
 Pre-compiled firmware (`.hex`) and the target config file are included in this repository. The hex supports all features listed below.
