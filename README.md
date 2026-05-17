@@ -167,6 +167,17 @@ Blackbox logs and DVR footage from test flights are available in the [`logs/`](l
 
 Logs were recorded using the onboard W25Q128JVSIQ flash via Betaflight 4.6 blackbox at 1kHz.
 
+## Test build
+| Component | Details |
+|---|---|
+| **ESC** | LittleBee Spring 30A (BlueJay firmware) |
+| **VTX** | SpeedyBee TX800 (Pagoda2) |
+| **RX** | SpeedyBee Nano ELRS |
+| **Camera** | Mista 1672 |
+| **Motors** | Emax RS2205 2350KV |
+| **Battery** | 4S 1550mAh (Ovionic) |
+| **Frame** | Geprc MK4 5" |
+
 ---
 
 
