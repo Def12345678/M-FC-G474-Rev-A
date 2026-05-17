@@ -161,6 +161,12 @@ You can compile your own firmware with custom flags. Copy the target config file
 Building was tested using WSL. Refer to the official Betaflight build guide for setup instructions:
 [https://betaflight.com/docs/development/building/Building-in-Ubuntu](https://betaflight.com/docs/development/building/Building-in-Ubuntu)
 
+## Flight Logs & Blackbox Data
+
+Blackbox logs and DVR footage from test flights are available in the [`logs/`](logs/) folder and on https://youtu.be/7Q5jRaf4V_Y(#) / https://pixeldrain.com/u/gxZJVt8E(#).
+
+Logs were recorded using the onboard W25Q128JVSIQ flash via Betaflight 4.6 blackbox at 1kHz.
+
 ---
 
 
