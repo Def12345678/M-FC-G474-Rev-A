@@ -6,7 +6,7 @@
 
 ## Overview
 
-M-FC is a DIY flight controller designed for FPV drones, built around the STM32G474RET6 microcontroller and running Betaflight 4.6. The "Modular" name reflects the connector philosophy — every peripheral interface is broken out via JST-SH connectors, making wiring clean, repeatable, and swap-friendly.
+M-FC is a DIY flight controller designed for FPV drones 30.5x30.5mm mounting holes, built around the STM32G474RET6 microcontroller and running Betaflight 4.6. The "Modular" name reflects the connector philosophy — every peripheral interface is broken out via JST-SH connectors, making wiring clean, repeatable, and swap-friendly.
 
 The board is paired with a dedicated PDB in a standard FC/PDB stack configuration. The FC itself operates at 5V (no onboard BEC), sourcing power from the ESC or PDB. REV-2 will include an onboard BEC.
 
