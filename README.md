@@ -2,6 +2,10 @@
 
 > **Note:** This is REV-1 — a Proof-of-Concept / educational build. REV-2 is in development and will address known hardware ergonomics issues. Not recommended for production use.
 
+M-FC has been flying on a 5" freestyle build for over a year.
+
+<img src="img/very-nice-photo.jpg" width="600" alt="M-FC REV-1 — next and in drone">
+
 ---
 
 ## Overview
