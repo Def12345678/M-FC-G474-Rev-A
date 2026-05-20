@@ -4,7 +4,7 @@
 
 M-FC has been flying on a 5" freestyle build for over a year.
 
-<img src="img/Very-nice-photo.png" width="600" alt="M-FC REV-1 — next and in drone">
+![M-FC + M-PDB stack installed in Geprc MK4 5" frame](img/Very-nice-photo.png)
 
 ---
 
