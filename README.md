@@ -4,7 +4,6 @@
 
 M-FC has been flying on a 5" freestyle build for over a year.
 
-![M-FC + M-PDB stack installed in Geprc MK4 5" frame](img/Very-nice-photo.png)
 
 ---
 
